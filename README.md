@@ -14,7 +14,7 @@
    ```
 
 3. Modifica el fichero de configuración del virtualhost en `./dockerfiles/apache/config/iesalixar-ssl-conf`. 
-   Cambia tu nombre de dominio en las directivas: `ServerName`, `ServerAlias`, `SSLCertificateFile`, `SSLCertificateKeyFile`):
+   Cambia tu nombre de dominio en las directivas: `ServerName`, `ServerAlias`, `SSLCertificateFile`, `SSLCertificateKeyFile`.
    Modifica también el nombre de dominio en la URL de la directiva `Redirect permanent`.
 
 4. Ejecuta los contenedores con el comando:
@@ -44,7 +44,7 @@
 
    Comprueba aparecen ambos nombres `tudominio.freeddns.org` y `www.tudominio.freeddns.org` en la extensión SAN.
 
-10. Para finalizar ejecuta el comando: 
+10. Al finalizar, ejecuta el siguiente comando para parar y eliminar los contenedores: 
     ```bash
     docker compose down -v
     ```
