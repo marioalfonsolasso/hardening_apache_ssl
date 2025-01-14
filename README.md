@@ -2,7 +2,7 @@
 
 1. Modifica el fichero `env.example` con los valores de las variables y cambia el nombre a `.env`.
 
-2. Crea el fichero `dynu-credentials.ini` en el directorio principal con el API Key de [Dynu](https://www.dynu.com/). El contenido sería:
+2. Cambia el nombre (sin .example) y modifica el fichero `dynu-credentials.ini` con tu API Key de [Dynu](https://www.dynu.com/). El contenido sería:
 
    ```ini
    dns_dynu_auth_token = XXXXXXXXXXX
@@ -31,7 +31,10 @@
    docker compose ps
    ```
 
-7. Añade el nombre y su alias con prefijo www. al fichero `/etc/hosts` del equipo cliente, asociados con la IP del servidor web. Si se trata del mismo equipo, puedes indicar `127.0.0.1` (localhost) en lugar de la IP.
+7. En el equipo cliente, añade el nombre y su alias con prefijo www. al fichero `/etc/hosts`, asociados con la IP del servidor web. Si se trata del mismo equipo, puedes indicar `127.0.0.1` (localhost) en lugar de la IP.
+   ```bash
+   127.0.0.1	tudominio.freeddns.org	www.tudominio.freeddns.org
+   ```
 
 8. Accede con el navegador con el nombre del sitio y el alias:
    - [https://tudominio.freeddns.org](https://tudominio.freeddns.org)
