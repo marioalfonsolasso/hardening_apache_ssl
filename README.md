@@ -46,6 +46,6 @@
 
 10. Al finalizar, ejecuta el siguiente comando para parar y eliminar los contenedores: 
     ```bash
-    docker compose down -v
+    docker compose down
     ```
 
